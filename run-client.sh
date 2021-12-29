@@ -22,6 +22,7 @@ while :
 do
   echo "Checking for updates..."
   git stash
+  rm cargo.lock
   STATUS=$(git pull)
 
   echo "Running the node..."
